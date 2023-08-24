@@ -32,15 +32,16 @@ SOLID is a short form for the five object-oriented design (OOD) principles by Ro
 - Avoids the generalization concept. It means we can design such system using this principle where same type of real world objects may have different ways to implement it's function.
   Example:
   Let's construct a simple class called Vehicle that has some attributes and methods and a subclass Car that extends it as shown below:
-   <img src="https://github.com/Ajoy-1704001/OOD-Principles/assets/57573642/5054cb30-265b-4db0-8a17-8b887f28d3ac" width=50% height=40%>
+   <img src="https://github.com/Ajoy-1704001/OOD-Principles/assets/57573642/5054cb30-265b-4db0-8a17-8b887f28d3ac" width=30% height=20%>
   Now we want to add some more features like, adding another class ```Bicycle```. We want to extend the ```Vehicle``` class like OCP.  A bicycle is a vehicle, but it does not have an engine. Therefore, the Bicycle class should not be allowed to override the ```startEngine()``` method.
   A possible solution to this issue would be to add two subclasses of ```Vehicle``` that classify the vehicles as motorized vehicles and manual vehicles as follows:
-  <img src="https://github.com/Ajoy-1704001/OOD-Principles/assets/57573642/fe72931a-640b-41f8-b892-d739652f43b4" width=50% height=40%>
+  <img src="https://github.com/Ajoy-1704001/OOD-Principles/assets/57573642/fe72931a-640b-41f8-b892-d739652f43b4" width=30% height=20%>
   
 ### Interface Segregation Principle
 - It does not recommend having methods that an interface would not use and require. So, Unnecessary methods in an interface can cause all the implementing class to implement those unnecessary method which makes the system hard to maintain.
 - That means, it provide more precise code design with proper abstraction.
-
+  Example: 
+<img src="https://github.com/Ajoy-1704001/OOD-Principles/assets/57573642/5a659237-d147-4c13-90a5-0bdb30cd0d54" width=30% height=20%>
 
 ### Dependency Inversion Principle
 - The principle states: Low level modules shouldn't be depend on high level modules, but rather both should depend on abstractions.
