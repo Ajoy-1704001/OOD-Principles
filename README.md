@@ -10,7 +10,7 @@ SOLID is a short form for the five object-oriented design (OOD) principles by Ro
 - Increases extensibility and modularity
 
 ## SOLID
-### Single Responsibility Design
+### 1. Single Responsibility Design
 - A class should have only one purpose.
 - All the data members and function will work towards attaining a common goal.
   Example: We have a class ```Product``` which have multiple attributes. Another class ```Order``` have other attributes along with a method ```calculateDiscount()```.
@@ -20,7 +20,7 @@ SOLID is a short form for the five object-oriented design (OOD) principles by Ro
    
 <img src="https://github.com/Ajoy-1704001/OOD-Principles/assets/57573642/43045c72-9751-453f-88bc-6899c3c174b1" width=50% height=40%>
 
-### Open Closed Principle
+### 2. Open Closed Principle
 - OCP can be defined as:
   > Open for extension, but closed for modification
 - It helps to extend any system without modifying the existing one.
@@ -29,7 +29,7 @@ SOLID is a short form for the five object-oriented design (OOD) principles by Ro
   
   <img src="https://github.com/Ajoy-1704001/OOD-Principles/assets/57573642/16f3076e-6c07-40da-814b-0e67b3e6c401" width=50% height=20%>
 
-### Liskov Subsititution Principle
+### 3. Liskov Subsititution Principle
 - It povides the use of inheritance in the design so that Super class objects can be replaced by the objects of subclass.
 - Avoids the generalization concept. It means we can design such system using this principle where same type of real world objects may have different ways to implement it's function.
   Example:
@@ -42,7 +42,7 @@ SOLID is a short form for the five object-oriented design (OOD) principles by Ro
   
   <img src="https://github.com/Ajoy-1704001/OOD-Principles/assets/57573642/fe72931a-640b-41f8-b892-d739652f43b4" width=20% height=1%>
   
-### Interface Segregation Principle
+### 4. Interface Segregation Principle
 - It does not recommend having methods that an interface would not use and require. So, Unnecessary methods in an interface can cause all the implementing class to implement those unnecessary method which makes the system hard to maintain.
 - That means, it provide more precise code design with proper abstraction.
   Example: In this example, we have ```Square```, ```Rectangle``` and ```Cube``` class are implementing the ```Shape``` interface which have ```area()``` and ```volume()``` method. But, ```Sqaure``` and ```Rectangle``` can't have any ```volume()``` method. So, they are forced to implement the method.
@@ -55,10 +55,10 @@ The possible soultion is:
 
 Now, there are two interfaces present: ```Shape``` and ```Shape3D```. The Shape interface contains only the methods that are required for 2-D shapes like squares, rectangles, etc., while the ```Shape3D``` interface inherits the methods of the Shape interface and itself only contains methods for 3-D shapes like cubes, spheres, etc.
 
-### Dependency Inversion Principle
+### 5. Dependency Inversion Principle
 - The principle states: Low level modules shouldn't be depend on high level modules, but rather both should depend on abstractions.
 - As a result, modules are decoupled and can be useful in case of maintenance and testing.
-  Example: Let's look at the below diagram. All the low level class are dependent on ```Manager``.
+  Example: Let's look at the below diagram. All the low level class are dependent on ```Manager```.
   
 <img src="https://github.com/Ajoy-1704001/OOD-Principles/assets/57573642/d6bea928-50ec-4eda-ab10-49cb39001782" width=30% height=20%>
 
