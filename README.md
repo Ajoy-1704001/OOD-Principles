@@ -37,13 +37,19 @@ SOLID is a short form for the five object-oriented design (OOD) principles by Ro
    
   Now we want to add some more features like, adding another class ```Bicycle```. We want to extend the ```Vehicle``` class like OCP.  A bicycle is a vehicle, but it does not have an engine. Therefore, the Bicycle class should not be allowed to override the ```startEngine()``` method.
   A possible solution to this issue would be to add two subclasses of ```Vehicle``` that classify the vehicles as motorized vehicles and manual vehicles as follows:
-  <img src="https://github.com/Ajoy-1704001/OOD-Principles/assets/57573642/fe72931a-640b-41f8-b892-d739652f43b4" width=30% height=20%>
+  <img src="https://github.com/Ajoy-1704001/OOD-Principles/assets/57573642/fe72931a-640b-41f8-b892-d739652f43b4" width=30% height=10%>
   
 ### Interface Segregation Principle
 - It does not recommend having methods that an interface would not use and require. So, Unnecessary methods in an interface can cause all the implementing class to implement those unnecessary method which makes the system hard to maintain.
 - That means, it provide more precise code design with proper abstraction.
-  Example: 
+  Example: In this example, we have ```Square```, ```Rectangle``` and ```Cube``` class are implementing the ```Shape``` interface which have ```area()``` and ```volume()``` method. But, ```Sqaure``` and ```Rectangle`` can't have any ```volume()``` method. So, they are forced to implement the method.
+  
 <img src="https://github.com/Ajoy-1704001/OOD-Principles/assets/57573642/5a659237-d147-4c13-90a5-0bdb30cd0d54" width=30% height=20%>
+The possible soultion is:
+
+<img src="https://github.com/Ajoy-1704001/OOD-Principles/assets/57573642/abeb31b8-19c0-466b-88d8-8a3ec050e3bd" width=30% height=20%>
+
+Now, there are two interfaces present: ```Shape``` and ```Shape3D```. The Shape interface contains only the methods that are required for 2-D shapes like squares, rectangles, etc., while the ```Shape3D``` interface inherits the methods of the Shape interface and itself only contains methods for 3-D shapes like cubes, spheres, etc.
 
 ### Dependency Inversion Principle
 - The principle states: Low level modules shouldn't be depend on high level modules, but rather both should depend on abstractions.
