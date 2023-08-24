@@ -2,6 +2,7 @@
 SOLID is a short form for the five object-oriented design (OOD) principles by Robert C. Martin. The illustration below represents the full form for SOLID design principles.
 
 <img src="https://github.com/Ajoy-1704001/OOD-Principles/assets/57573642/a283948d-d9e5-4ddb-a842-d5e12c3f9a74" width=50% height=30%>
+> Image Reference : https://www.educative.io/
 
 ## Why use SOLID principles?
 - Helps to create more understandable and maintainable code
@@ -39,7 +40,7 @@ SOLID is a short form for the five object-oriented design (OOD) principles by Ro
   Now we want to add some more features like, adding another class ```Bicycle```. We want to extend the ```Vehicle``` class like OCP.  A bicycle is a vehicle, but it does not have an engine. Therefore, the Bicycle class should not be allowed to override the ```startEngine()``` method.
   A possible solution to this issue would be to add two subclasses of ```Vehicle``` that classify the vehicles as motorized vehicles and manual vehicles as follows:
   
-  <img src="https://github.com/Ajoy-1704001/OOD-Principles/assets/57573642/fe72931a-640b-41f8-b892-d739652f43b4" width=30% height=2%>
+  <img src="https://github.com/Ajoy-1704001/OOD-Principles/assets/57573642/fe72931a-640b-41f8-b892-d739652f43b4" width=20% height=1%>
   
 ### Interface Segregation Principle
 - It does not recommend having methods that an interface would not use and require. So, Unnecessary methods in an interface can cause all the implementing class to implement those unnecessary method which makes the system hard to maintain.
@@ -61,9 +62,7 @@ Now, there are two interfaces present: ```Shape``` and ```Shape3D```. The Shape 
   
 <img src="https://github.com/Ajoy-1704001/OOD-Principles/assets/57573642/d6bea928-50ec-4eda-ab10-49cb39001782" width=30% height=20%>
 
-If we want to add another type of employee, we must change the ```Manager``` class which is against the OCP principle. We can use an abstraction between ```Manager``` and other employee classes so that we don't need to change the ```Manager``` class everytime when we add a new employee.
+If we want to add another type of employee, we must change the ```Manager``` class which is against the OCP principle. So, the solution is: We can use an abstraction between ```Manager``` and other employee classes so that we don't need to change the ```Manager``` class everytime when we add a new employee.
 
 <img src="https://github.com/Ajoy-1704001/OOD-Principles/assets/57573642/23a096cf-70e5-45bd-8cc2-b61b90e1a5ee" width=30% height=20%>
-
-
 
