@@ -25,7 +25,7 @@ SOLID is a short form for the five object-oriented design (OOD) principles by Ro
 - It helps to extend any system without modifying the existing one.
 - Always protected from error while introducing new code into the system.
   Example: We have a class ```Calculator``` which has basic functionality. Now we want to extend some features into our calculator system. According to the principle, we are allowed to extend. So we can extend the ```Calculator``` class and new functionality without modifying the ```Calculator``` class.
-  <img src="https://github.com/Ajoy-1704001/OOD-Principles/assets/57573642/16f3076e-6c07-40da-814b-0e67b3e6c401" width=50% height=40%>
+  <img src="https://github.com/Ajoy-1704001/OOD-Principles/assets/57573642/16f3076e-6c07-40da-814b-0e67b3e6c401" width=50% height=20%>
 
 ### Liskov Subsititution Principle
 - It povides the use of inheritance in the design so that Super class objects can be replaced by the objects of subclass.
@@ -37,7 +37,7 @@ SOLID is a short form for the five object-oriented design (OOD) principles by Ro
    
   Now we want to add some more features like, adding another class ```Bicycle```. We want to extend the ```Vehicle``` class like OCP.  A bicycle is a vehicle, but it does not have an engine. Therefore, the Bicycle class should not be allowed to override the ```startEngine()``` method.
   A possible solution to this issue would be to add two subclasses of ```Vehicle``` that classify the vehicles as motorized vehicles and manual vehicles as follows:
-  <img src="https://github.com/Ajoy-1704001/OOD-Principles/assets/57573642/fe72931a-640b-41f8-b892-d739652f43b4" width=30% height=10%>
+  <img src="https://github.com/Ajoy-1704001/OOD-Principles/assets/57573642/fe72931a-640b-41f8-b892-d739652f43b4" width=30% height=5%>
   
 ### Interface Segregation Principle
 - It does not recommend having methods that an interface would not use and require. So, Unnecessary methods in an interface can cause all the implementing class to implement those unnecessary method which makes the system hard to maintain.
@@ -45,6 +45,7 @@ SOLID is a short form for the five object-oriented design (OOD) principles by Ro
   Example: In this example, we have ```Square```, ```Rectangle``` and ```Cube``` class are implementing the ```Shape``` interface which have ```area()``` and ```volume()``` method. But, ```Sqaure``` and ```Rectangle`` can't have any ```volume()``` method. So, they are forced to implement the method.
   
 <img src="https://github.com/Ajoy-1704001/OOD-Principles/assets/57573642/5a659237-d147-4c13-90a5-0bdb30cd0d54" width=30% height=20%>
+
 The possible soultion is:
 
 <img src="https://github.com/Ajoy-1704001/OOD-Principles/assets/57573642/abeb31b8-19c0-466b-88d8-8a3ec050e3bd" width=30% height=20%>
