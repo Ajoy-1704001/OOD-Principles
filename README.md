@@ -38,6 +38,7 @@ SOLID is a short form for the five object-oriented design (OOD) principles by Ro
    
   Now we want to add some more features like, adding another class ```Bicycle```. We want to extend the ```Vehicle``` class like OCP.  A bicycle is a vehicle, but it does not have an engine. Therefore, the Bicycle class should not be allowed to override the ```startEngine()``` method.
   A possible solution to this issue would be to add two subclasses of ```Vehicle``` that classify the vehicles as motorized vehicles and manual vehicles as follows:
+  
   <img src="https://github.com/Ajoy-1704001/OOD-Principles/assets/57573642/fe72931a-640b-41f8-b892-d739652f43b4" width=30% height=2%>
   
 ### Interface Segregation Principle
@@ -56,3 +57,13 @@ Now, there are two interfaces present: ```Shape``` and ```Shape3D```. The Shape 
 ### Dependency Inversion Principle
 - The principle states: Low level modules shouldn't be depend on high level modules, but rather both should depend on abstractions.
 - As a result, modules are decoupled and can be useful in case of maintenance and testing.
+  Example: Let's look at the below diagram. All the low level class are dependent on ```Manager``.
+  
+<img src="https://github.com/Ajoy-1704001/OOD-Principles/assets/57573642/d6bea928-50ec-4eda-ab10-49cb39001782" width=30% height=20%>
+
+If we want to add another type of employee, we must change the ```Manager``` class which is against the OCP principle. We can use an abstraction between ```Manager``` and other employee classes so that we don't need to change the ```Manager``` class everytime when we add a new employee.
+
+<img src="https://github.com/Ajoy-1704001/OOD-Principles/assets/57573642/23a096cf-70e5-45bd-8cc2-b61b90e1a5ee" width=30% height=20%>
+
+
+
