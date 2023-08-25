@@ -39,12 +39,12 @@ SOLID is a short form for the five object-oriented design (OOD) principles by Ro
   Example:
   Let's construct a simple class called Vehicle that has some attributes and methods and a subclass Car that extends it as shown below:
   
-   <img src="https://github.com/Ajoy-1704001/OOD-Principles/assets/57573642/5a3c409e-9ff1-4006-ae26-383452b7ec39" width=10% height=1%>
+   <img src="https://github.com/Ajoy-1704001/OOD-Principles/assets/57573642/5a3c409e-9ff1-4006-ae26-383452b7ec39" width=20% height=1%>
    
   Now we want to add some more features like, adding another class ```Bicycle```. We want to extend the ```Vehicle``` class like OCP.  A bicycle is a vehicle, but it does not have an engine. Therefore, the Bicycle class should not be allowed to override the ```startEngine()``` method.
   A possible solution to this issue would be to add two subclasses of ```Vehicle``` that classify the vehicles as motorized vehicles and manual vehicles as follows:
 
-  <img src="https://github.com/Ajoy-1704001/OOD-Principles/assets/57573642/89d1fe0a-e47d-45df-aa43-b34009441d69" width=20% height=2%>
+  <img src="https://github.com/Ajoy-1704001/OOD-Principles/assets/57573642/89d1fe0a-e47d-45df-aa43-b34009441d69" width=20% height=4%>
   
 ### 4. Interface Segregation Principle
 - It does not recommend having methods that an interface would not use and require. So, Unnecessary methods in an interface can cause all the implementing class to implement those unnecessary method which makes the system hard to maintain.
