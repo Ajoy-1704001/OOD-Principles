@@ -46,7 +46,7 @@ SOLID is a short form for the five object-oriented design (OOD) principles by Ro
 ### 4. Interface Segregation Principle
 - It does not recommend having methods that an interface would not use and require. So, Unnecessary methods in an interface can cause all the implementing class to implement those unnecessary method which makes the system hard to maintain.
 - That means, it provide more precise code design with proper abstraction.
-  Example: In this example, we have ```Square```, ```Rectangle``` and ```Cube``` class are implementing the ```Shape``` interface which have ```area()``` and ```volume()``` method. But, ```Sqaure``` and ```Rectangle``` can't have any ```volume()``` method. So, they are forced to implement the method.
+  Example: In this example, we have ```Square```, ```Rectangle``` and ```Cube``` class are implementing the ```Shape``` interface which have ```area()``` and ```volume()``` method. But, ```Square``` and ```Rectangle``` can't have any ```volume()``` method. So, they are forced to implement the method.
   
 <img src="https://github.com/Ajoy-1704001/OOD-Principles/assets/57573642/5a659237-d147-4c13-90a5-0bdb30cd0d54" width=30% height=25%>
 
