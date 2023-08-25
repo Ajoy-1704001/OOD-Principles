@@ -31,7 +31,7 @@ SOLID is a short form for the five object-oriented design (OOD) principles by Ro
   <img src="https://github.com/Ajoy-1704001/OOD-Principles/assets/57573642/16f3076e-6c07-40da-814b-0e67b3e6c401" width=50% height=20%>
 
 ### 3. Liskov Subsititution Principle
-- It povides the use of inheritance in the design so that Super class objects can be replaced by the objects of subclass.
+- It provides the use of inheritance in the design so that Super class objects can be replaced by the objects of subclass.
 - Avoids the generalization concept. It means we can design such system using this principle where same type of real world objects may have different ways to implement it's function.
   Example:
   Let's construct a simple class called Vehicle that has some attributes and methods and a subclass Car that extends it as shown below:
