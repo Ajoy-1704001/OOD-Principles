@@ -16,10 +16,12 @@ SOLID is a short form for the five object-oriented design (OOD) principles by Ro
 - A class should have only one purpose.
 - All the data members and function will work towards attaining a common goal.
   Example: We have a class ```Product``` which have multiple attributes. Another class ```Order``` have other attributes along with a method ```calculateDiscount()```.
-<img src="https://github.com/Ajoy-1704001/OOD-Principles/assets/57573642/d0e8a2db-bad4-48ec-8182-d035fd37df8f" width=30% height=40%>
+  
+<img src="https://github.com/Ajoy-1704001/OOD-Principles/assets/57573642/32a94f8d-ffc0-44f0-8890-fa647657aafb" width=30% height=40%>
+
 
   But the problem occurs when we try to change the mechanism or logic to calculate the discount. This breaks the rule which states, "A class should have only one reason to change." So, without modifying the ```order``` class, we can create another class ```DiscountCalculator``` and move the methods according to it. SO, changes can be only made on that class.
-   
+
 <img src="https://github.com/Ajoy-1704001/OOD-Principles/assets/57573642/43045c72-9751-453f-88bc-6899c3c174b1" width=50% height=40%>
 
 ### 2. Open Closed Principle
