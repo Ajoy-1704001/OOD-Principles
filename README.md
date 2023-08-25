@@ -9,6 +9,7 @@ SOLID is a short form for the five object-oriented design (OOD) principles by Ro
 - Helps to create more understandable and maintainable code
 - Reduces tight coupling
 - Increases extensibility and modularity
+- Testing becomes easy
 
 ## SOLID
 ### 1. Single Responsibility Design
