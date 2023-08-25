@@ -2,6 +2,7 @@
 SOLID is a short form for the five object-oriented design (OOD) principles by Robert C. Martin. The illustration below represents the full form for SOLID design principles.
 
 <img src="https://github.com/Ajoy-1704001/OOD-Principles/assets/57573642/a283948d-d9e5-4ddb-a842-d5e12c3f9a74" width=50% height=30%>
+
 > Image Reference : https://www.educative.io/
 
 ## Why use SOLID principles?
