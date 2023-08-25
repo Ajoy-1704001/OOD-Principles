@@ -39,7 +39,7 @@ SOLID is a short form for the five object-oriented design (OOD) principles by Ro
   Example:
   Let's construct a simple class called Vehicle that has some attributes and methods and a subclass Car that extends it as shown below:
   
-   <img src="https://github.com/Ajoy-1704001/OOD-Principles/assets/57573642/5a3c409e-9ff1-4006-ae26-383452b7ec39" width=20% height=1%>
+   <img src="https://github.com/Ajoy-1704001/OOD-Principles/assets/57573642/5a3c409e-9ff1-4006-ae26-383452b7ec39" width=10% height=1%>
    
   Now we want to add some more features like, adding another class ```Bicycle```. We want to extend the ```Vehicle``` class like OCP.  A bicycle is a vehicle, but it does not have an engine. Therefore, the Bicycle class should not be allowed to override the ```startEngine()``` method.
   A possible solution to this issue would be to add two subclasses of ```Vehicle``` that classify the vehicles as motorized vehicles and manual vehicles as follows:
