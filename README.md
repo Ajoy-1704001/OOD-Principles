@@ -41,18 +41,18 @@ Without modifying the ```Order``` class, we can create another class ```Discount
 
   For customer satisfaction, the authority decided to integrate another payment option ```Nagad```. In this case, we have to modify the ```Payment``` class to process the ```Nagad``` class instance. This violates the OCP.
   
- <img src="https://github.com/Ajoy-1704001/OOD-Principles/assets/57573642/a26f2165-f1a8-42a4-9827-3cc7c845c2aa" width=70% height=40%>
+ <img src="https://github.com/Ajoy-1704001/OOD-Principles/assets/57573642/bfe5b13b-9328-4656-b19c-1ff948ce0a1c" width=70% height=40%>
 
 **Possible Solution**
 
 We can introduce an abstraction level between payment processing and payment options. If new payment option is integrated into the system, it can implement the interface ```PaymentOption``` and we don't need to modify the ```Payment``` class.
 
- <img src="https://github.com/Ajoy-1704001/OOD-Principles/assets/57573642/26358ef5-52f9-4217-95cb-4e66670cb289" width=70% height=40%>
+ <img src="https://github.com/Ajoy-1704001/OOD-Principles/assets/57573642/26358ef5-52f9-4217-95cb-4e66670cb289" width=50% height=40%>
 
 
 ### 3. Liskov Subsititution Principle
-- It provides the use of inheritance in the design so that Super class objects can be replaced by the objects of subclass.
-- Avoids the generalization concept. It means we can design such system using this principle where same type of real world objects may have different ways to implement it's function.
+- It provides the use of inheritance in the design so that Super class objects can be completely replaced by the objects of subclass.
+- Avoids the generalization concept. That requires the objects of your subclasses to behave in the same way as the objects of your superclass.
   Example:
   Let's construct a simple class called Vehicle that has some attributes and methods and a subclass Car that extends it as shown below:
   
