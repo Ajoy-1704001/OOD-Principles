@@ -19,23 +19,36 @@ SOLID is a short form for the five object-oriented design (OOD) principles by Ro
   Example: We have  class two ```Product``` and ```Order``` which have multiple attributes. ```Order``` class have a method ```calculateDiscount()```.
   Visual representation of above scenario is given below:
   
-<img src="https://github.com/Ajoy-1704001/OOD-Principles/assets/57573642/32a94f8d-ffc0-44f0-8890-fa647657aafb" width=30% height=40%>
+<img src="https://github.com/Ajoy-1704001/OOD-Principles/assets/57573642/32a94f8d-ffc0-44f0-8890-fa647657aafb" width=40% height=40%>
 
   **Violation**
+  
   Class ```Order``` is all about order details. But, it has a method ```calculateDiscount()``` method which causes the violation of SRP. Suppose, we want to change the inside logic to calculate discount in future. For this reason, we need to change the ```Order``` class which breaks the rule which states, "A class should have only one reason to change". That means ```Order``` have only one job to do which is handling order.
   **Possible Solution**
+  
 Without modifying the ```Order``` class, we can create another class ```DiscountCalculator``` and move the methods according to it. So, changes can be only made on ```DiscountCalculator``` class in future. And it preserves the SRP rule.
 
-<img src="https://github.com/Ajoy-1704001/OOD-Principles/assets/57573642/d6780cf5-9ea0-4806-9123-2a9d9840acd2" width=50% height=40%>
+<img src="https://github.com/Ajoy-1704001/OOD-Principles/assets/57573642/d6780cf5-9ea0-4806-9123-2a9d9840acd2" width=50% height=50%>
 
 ### 2. Open Closed Principle
 - OCP can be defined as:
   > Open for extension, but closed for modification
 - It helps to extend any system without modifying the existing one.
 - Always protected from error while introducing new code into the system.
-  Example: We have a class ```Calculator``` which has basic functionality. Now we want to extend some features into our calculator system. According to the principle, we are allowed to extend. So we can extend the ```Calculator``` class and new functionality without modifying the ```Calculator``` class.
+  Example: We have two option for payment ```Bkash``` and ```Rocket``` which have a method ```initialize``` to initialize the payment gateway. There is another class ```Payment``` which starts processing the payment options depending on the user choice of payment.
+
+  **Violation**
+
+  For customer satisfaction, the authority decided to integrate another payment option ```Nagad```. In this case, we have to modify the ```Payment``` class to process the ```Nagad``` class instance. This violates the OCP.
   
-  <img src="https://github.com/Ajoy-1704001/OOD-Principles/assets/57573642/42fb5d4a-bad4-4396-a968-e272deae2571" width=50% height=20%>
+ <img src="https://github.com/Ajoy-1704001/OOD-Principles/assets/57573642/a26f2165-f1a8-42a4-9827-3cc7c845c2aa" width=70% height=40%>
+
+**Possible Solution**
+
+We can introduce an abstraction level between payment processing and payment options. If new payment option is integrated into the system, it can implement the interface ```PaymentOption``` and we don't need to modify the ```Payment``` class.
+
+ <img src="https://github.com/Ajoy-1704001/OOD-Principles/assets/57573642/26358ef5-52f9-4217-95cb-4e66670cb289" width=70% height=40%>
+
 
 ### 3. Liskov Subsititution Principle
 - It provides the use of inheritance in the design so that Super class objects can be replaced by the objects of subclass.
