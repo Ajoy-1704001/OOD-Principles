@@ -60,22 +60,26 @@ We can introduce an abstraction level between payment processing and payment opt
 
   Let's add a new feature/feature ```Nokia``` which is also a mobile. But, it doesn't have any method ```findMyPhone()``` method. So, there is no need to override the ```findMyPhone``` method. As a result, base can't be fully replaced by the subclass.
 
-   <img src="https://github.com/Ajoy-1704001/OOD-Principles/assets/57573642/f40b79d6-604d-4277-9d38-aedbeee84f91" width=10% height=2%>
+   <img src="https://github.com/Ajoy-1704001/OOD-Principles/assets/57573642/f40b79d6-604d-4277-9d38-aedbeee84f91" width=40% height=40%>
 
    **Possible Solution**
    
-  A possible solution to this issue would be to add two subclasses of ```Mobile``` that classify the mobiles as ```SmartPhone``` and ```NormalMobile``` as follows:
+  A possible solution to this issue would be to add two subclasses of ```Mobile``` that classify the mobiles as ```SmartPhone``` and ```Nokia``` as follows:
 
   <img src="https://github.com/Ajoy-1704001/OOD-Principles/assets/57573642/65779144-96ab-47fe-a98d-99564db43ec9" width=50% height=30%>
   
 ### 4. Interface Segregation Principle
 - It does not recommend having methods that an interface would not use and require. So, Unnecessary methods in an interface can cause all the implementing class to implement those unnecessary method which makes the system hard to maintain.
 - That means, it provide more precise code design with proper abstraction.
-  Example: In this example, we have ```Square```, ```Rectangle``` and ```Cube``` class are implementing the ```Shape``` interface which have ```area()``` and ```volume()``` method. But, ```Square``` and ```Rectangle``` can't have any ```volume()``` method. So, they are forced to implement the method.
+  Example: In this example, we have ```Square```, ```Rectangle``` and ```Cube``` class are implementing the ```Shape``` interface which have ```area()``` and ```volume()``` method.
+
+  **Violance**
+
+  But, ```Square``` and ```Rectangle``` can't have any ```volume()``` method. So, they are forced to implement the method. It breaks the ISP rule.
   
 <img src="https://github.com/Ajoy-1704001/OOD-Principles/assets/57573642/cf1b63cf-3d3c-4c75-bf0b-ed52462eac23" width=30% height=25%>
 
-The possible soultion is:
+**Possible Solution**
 
 <img src="https://github.com/Ajoy-1704001/OOD-Principles/assets/57573642/b969d210-b975-4c47-977e-3cf2db59c0a1" width=30% height=25%>
 
@@ -88,7 +92,13 @@ Now, there are two interfaces present: ```Shape``` and ```Shape3D```. The Shape 
   
 <img src="https://github.com/Ajoy-1704001/OOD-Principles/assets/57573642/ebfbbefd-2e2e-48e2-9750-6e36d8364530" width=30% height=20%>
 
-If we want to add another type of employee, we must change the ```Manager``` class which is against the OCP principle. So, the solution is: We can use an abstraction between ```Manager``` and other employee classes so that we don't need to change the ```Manager``` class everytime when we add a new employee.
+**Violance**
+
+If we want to add another type of employee, we must change the ```Manager``` class which is against the OCP principle. 
+
+**Possible Solution**
+
+So, the solution is: We can use an abstraction between ```Manager``` and other employee classes so that we don't need to change the ```Manager``` class everytime when we add a new employee.
 
 <img src="https://github.com/Ajoy-1704001/OOD-Principles/assets/57573642/3bc1f506-0476-40a4-bcd4-e50696f638f0" width=30% height=25%>
 
