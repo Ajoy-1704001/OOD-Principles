@@ -12,15 +12,19 @@ SOLID is a short form for the five object-oriented design (OOD) principles by Ro
 - Testing becomes easy
 
 ## SOLID
-### 1. Single Responsibility Design
+### 1. Single Responsibility Principle
 - A class should have only one purpose.
 - All the data members and function will work towards attaining a common goal.
-  Example: We have a class ```Product``` which have multiple attributes. Another class ```Order``` have other attributes along with a method ```calculateDiscount()```.
+  
+  Example: We have  class two ```Product``` and ```Order``` which have multiple attributes. ```Order``` class have a method ```calculateDiscount()```.
+  Visual representation of above scenario is given below:
   
 <img src="https://github.com/Ajoy-1704001/OOD-Principles/assets/57573642/32a94f8d-ffc0-44f0-8890-fa647657aafb" width=30% height=40%>
 
-
-  But the problem occurs when we try to change the mechanism or logic to calculate the discount. This breaks the rule which states, "A class should have only one reason to change." So, without modifying the ```order``` class, we can create another class ```DiscountCalculator``` and move the methods according to it. SO, changes can be only made on that class.
+  **Violation**
+  Class ```Order``` is all about order details. But, it has a method ```calculateDiscount()``` method which causes the violation of SRP. Suppose, we want to change the inside logic to calculate discount in future. For this reason, we need to change the ```Order``` class which breaks the rule which states, "A class should have only one reason to change". That means ```Order``` have only one job to do which is handling order.
+  **Possible Solution**
+Without modifying the ```Order``` class, we can create another class ```DiscountCalculator``` and move the methods according to it. So, changes can be only made on ```DiscountCalculator``` class in future. And it preserves the SRP rule.
 
 <img src="https://github.com/Ajoy-1704001/OOD-Principles/assets/57573642/d6780cf5-9ea0-4806-9123-2a9d9840acd2" width=50% height=40%>
 
