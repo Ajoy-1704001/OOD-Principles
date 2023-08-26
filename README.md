@@ -54,14 +54,19 @@ We can introduce an abstraction level between payment processing and payment opt
 - It provides the use of inheritance in the design so that Super class objects can be completely replaced by the objects of subclass.
 - Avoids the generalization concept. That requires the objects of your subclasses to behave in the same way as the objects of your superclass.
   Example:
-  Let's construct a simple class called Vehicle that has some attributes and methods and a subclass Car that extends it as shown below:
-  
-   <img src="https://github.com/Ajoy-1704001/OOD-Principles/assets/57573642/5a3c409e-9ff1-4006-ae26-383452b7ec39" width=10% height=2%>
-   
-  Now we want to add some more features like, adding another class ```Bicycle```. We want to extend the ```Vehicle``` class like OCP.  A bicycle is a vehicle, but it does not have an engine. Therefore, the Bicycle class should not be allowed to override the ```startEngine()``` method.
-  A possible solution to this issue would be to add two subclasses of ```Vehicle``` that classify the vehicles as motorized vehicles and manual vehicles as follows:
+  Suppose we have a class ```Mobile``` which has some attributes and methods and few subclass ```Iphone```and ```Pixel```.
 
-  <img src="https://github.com/Ajoy-1704001/OOD-Principles/assets/57573642/89d1fe0a-e47d-45df-aa43-b34009441d69" width=20% height=10%>
+  **Violation**
+
+  Let's add a new feature/feature ```Nokia``` which is also a mobile. But, it doesn't have any method ```findMyPhone()``` method. So, there is no need to override the ```findMyPhone``` method. As a result, base can't be fully replaced by the subclass.
+
+   <img src="https://github.com/Ajoy-1704001/OOD-Principles/assets/57573642/f40b79d6-604d-4277-9d38-aedbeee84f91" width=10% height=2%>
+
+   **Possible Solution**
+   
+  A possible solution to this issue would be to add two subclasses of ```Mobile``` that classify the mobiles as ```SmartPhone``` and ```NormalMobile``` as follows:
+
+  <img src="https://github.com/Ajoy-1704001/OOD-Principles/assets/57573642/65779144-96ab-47fe-a98d-99564db43ec9" width=50% height=30%>
   
 ### 4. Interface Segregation Principle
 - It does not recommend having methods that an interface would not use and require. So, Unnecessary methods in an interface can cause all the implementing class to implement those unnecessary method which makes the system hard to maintain.
