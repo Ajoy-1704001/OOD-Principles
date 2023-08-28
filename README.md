@@ -69,21 +69,25 @@ We can introduce an abstraction level between payment processing and payment opt
   <img src="https://github.com/Ajoy-1704001/OOD-Principles/assets/57573642/65779144-96ab-47fe-a98d-99564db43ec9" width=50% height=30%>
   
 ### 4. Interface Segregation Principle
-- It does not recommend having methods that an interface would not use and require. So, Unnecessary methods in an interface can cause all the implementing class to implement those unnecessary method which makes the system hard to maintain.
+-  ISP focuses on segregating fat interfaces into specialized interfaces, so a class won't depend on interfaces that won't use.
 - That means, it provide more precise code design with proper abstraction.
-  Example: In this example, we have ```Square```, ```Rectangle``` and ```Cube``` class are implementing the ```Shape``` interface which have ```area()``` and ```volume()``` method.
+  Example: In this example, we have ```HpPrinter``` and ```CanonPrinter``` class are implementing the ```Printer``` interface which have ```scan()``` and ```print()``` method.
+  
+<img src="https://github.com/Ajoy-1704001/OOD-Principles/assets/57573642/ffb64748-2612-4bfe-9dec-0fe3d59f1976" width=30% height=25%>
 
   **Violance**
 
-  But, ```Square``` and ```Rectangle``` can't have any ```volume()``` method. So, they are forced to implement the method. It breaks the ISP rule.
-  
-<img src="https://github.com/Ajoy-1704001/OOD-Principles/assets/57573642/cf1b63cf-3d3c-4c75-bf0b-ed52462eac23" width=30% height=25%>
+  But, ```CanonPrinter``` doesn't have the functionality to scan. So, it is actually forcefully implementing the ```scan()``` method provided by the ```Printer``` interface.
 
 **Possible Solution**
 
-<img src="https://github.com/Ajoy-1704001/OOD-Principles/assets/57573642/b969d210-b975-4c47-977e-3cf2db59c0a1" width=30% height=25%>
+<img src="https://github.com/Ajoy-1704001/OOD-Principles/assets/57573642/2610d64e-c870-4558-82e7-42d0e0d681e5" width=30% height=25%>
 
-Now, there are two interfaces present: ```Shape``` and ```Shape3D```. The Shape interface contains only the methods that are required for 2-D shapes like squares, rectangles, etc., while the ```Shape3D``` interface inherits the methods of the Shape interface and itself only contains methods for 3-D shapes like cubes, spheres, etc.
+Now, there are two interfaces present: ```Printer``` and ```Scanner```. The Printer interface contains only the methods that are required for printing, while the ```Scanner``` interface methods are implemented by the classes which have scanning features.
+
+**Points to remember:***
+- It is quite hard to predict future requirements and create interfaces according to it.
+- So, we should not guess anything and implement a complicated code from beginning. We have to wait and see how requirement changes.
 
 ### 5. Dependency Inversion Principle
 - The principle states: Low level modules shouldn't be depend on high level modules, but rather both should depend on abstractions.
