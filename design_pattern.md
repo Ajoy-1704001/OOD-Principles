@@ -16,7 +16,7 @@ There are different types of design pattern. These are differed from each other 
 - The Factory Pattern helps us to align with the Dependency Inversion principle.
   ### Main Components
   
-  <img src="[https://github.com/Ajoy-1704001/OOD-Principles/assets/57573642/981b47c1-0ae6-4c11-ac8b-d4ef427744b9" width=50% height=30%>
+  <img src="https://github.com/Ajoy-1704001/OOD-Principles/assets/57573642/981b47c1-0ae6-4c11-ac8b-d4ef427744b9" width=50% height=30%>
 
   **Creator:** can be an abstract class or concrete class which should define the factory method.
   **Concrete Creator:**  are the subclasses overriding the factory method to return differnet objects.
