@@ -62,7 +62,7 @@ Here we have different options to pay. Each payment option has it's own algorith
 - Can be thought of as a wrapper or more formally a way to enhance or extend the behavior of an object dynamically. It favors composition over inheritance.
 - Decorator classes mirror the type of the components they decorate.
 - It usually insert decorators transparently and the client never has to know it’s dealing with a decorator.
-- It truely follows the OCP principle.
+- It truely follows the **OCP** principle and divide the classes to follow **SRP**.
 
   ### Main Components
 
@@ -74,5 +74,12 @@ Here we have different options to pay. Each payment option has it's own algorith
   **Concrete Decorator:** Now, if we want to add some extra functionality to add to the components dynamically, we can override methods or add our own methods.
 
   ### Example
+  Suppose, we have a ```Pizza``` interface. We create a ```PlainPizza``` class implementing the ```Pizza``` interface. But, I want to add some cheese in the pizza. Again, one of my friend wants some extra sauce in the pizza. After that, I also want another pizza with both extra cheese and sauce in the pizza. So, creating those different pizza's from ```Pizza``` interface using inheritance, cost lots of redundant code. So, here comes the decorator pattern. Decorator are the same type as the component, so basically it wraps the ```PlainPizza``` and decorates it with its own behavior. Using different types of concrete decorator, we can wrap each other and get our desired pizza.
+  
+  <img src="https://github.com/Ajoy-1704001/OOD-Principles/assets/57573642/5ae45ae9-78b0-45b6-a4e8-86bde740be62" width=50% height=30%>
+
+  ### When to use Decorator Pattern
+  - When we want to be able to assign extra behaviors to objects at runtime without breaking the code that uses these objects.
+  - When inheritance can cause problem extending an object's behavior or inheritance is not possible.
   
 
