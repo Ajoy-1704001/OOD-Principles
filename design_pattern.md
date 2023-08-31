@@ -19,8 +19,11 @@ There are different types of design pattern. These are differed from each other 
   <img src="https://github.com/Ajoy-1704001/OOD-Principles/assets/57573642/981b47c1-0ae6-4c11-ac8b-d4ef427744b9" width=55% height=40%>
 
   **Creator:** can be an abstract class or concrete class which should define the factory method.
+  
   **Concrete Creator:**  are the subclasses overriding the factory method to return differnet objects.
+  
   **Product:** is the interface, which can be by many other product types. Creator mainly returns the products objects.
+  
   **Concrete Product:** are the objects we want to create, so that we can use them in our code.
 
   ### Example
@@ -44,7 +47,9 @@ There are different types of design pattern. These are differed from each other 
 <img src="https://github.com/Ajoy-1704001/OOD-Principles/assets/57573642/caf7fc72-83d0-4452-bfa0-26f5a6f214da" width=40% height=40%>
 
 **Context:** It maintains a reference to the concrete strategy.
+
 **Strategy:** is a common interface for implementing all concrete strategies.
+
 **Client:** creates a strategy object and tells context to use that strategy. Client can replace the strategy depending on the need at runtime.
 
 ### Example:
@@ -69,8 +74,11 @@ Here we have different options to pay. Each payment option has it's own algorith
   <img src="https://github.com/Ajoy-1704001/OOD-Principles/assets/57573642/d16b4246-c5f0-402f-a047-0a680f3da2d3" width=50% height=40%>
 
   **Component:** is an common interface for both the components(wrapped objects) and decorators(wrapper).
+  
   **Concrete Component:** are the classes of objects that are going to be wrapped.
+  
   **Base Decorator:** It mainly holds the reference of the wrapped objects. So it achieves all the method of the wrapped objects.
+  
   **Concrete Decorator:** Now, if we want to add some extra functionality to add to the components dynamically, we can override methods or add our own methods.
 
   ### Example
