@@ -59,11 +59,20 @@ Here we have different options to pay. Each payment option has it's own algorith
 
 ## Decorator Pattern
 - It adds new functionality to objects without modifying their defining classes.
-- Can be thought of as a wrapper or more formally a way to enhance or extend the behavior of an object dynamically.
-- Doesn't use inheritance to extend behavior.
+- Can be thought of as a wrapper or more formally a way to enhance or extend the behavior of an object dynamically. It favors composition over inheritance.
 - Decorator classes mirror the type of the components they decorate.
 - It usually insert decorators transparently and the client never has to know it’s dealing with a decorator.
 - It truely follows the OCP principle.
 
   ### Main Components
+
+  <img src="https://github.com/Ajoy-1704001/OOD-Principles/assets/57573642/d16b4246-c5f0-402f-a047-0a680f3da2d3" width=40% height=40%>
+
+  **Component:** is an common interface for both the components(wrapped objects) and decorators(wrapper).
+  **Concrete Component:** are the classes of objects that are going to be wrapped.
+  **Base Decorator:** It mainly holds the reference of the wrapped objects. So it achieves all the method of the wrapped objects.
+  **Concrete Decorator:** Now, if we want to add some extra functionality to add to the components dynamically, we can override methods or add our own methods.
+
+  ### Example
   
+
