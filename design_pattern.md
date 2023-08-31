@@ -90,7 +90,7 @@ Here we have different options to pay. Each payment option has it's own algorith
   - When we want to be able to assign extra behaviors to objects at runtime without breaking the code that uses these objects.
   - When inheritance can cause problem extending an object's behavior or inheritance is not possible.
   
-# M
+# Miscellaneous
 ### Why factory method relies on inheritance?
 
 The factory method pattern relies on inheritance, as object creation is delegated to subclasses that implement the factory method to create objects. Concrete class of ```Creator``` interface overrides the object creation method and creates object according to the concrete class. So, subclasses mainly use polymorphism of ```createObject``` via inheritance.
