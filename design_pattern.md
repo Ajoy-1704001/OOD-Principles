@@ -82,4 +82,5 @@ Here we have different options to pay. Each payment option has it's own algorith
   - When we want to be able to assign extra behaviors to objects at runtime without breaking the code that uses these objects.
   - When inheritance can cause problem extending an object's behavior or inheritance is not possible.
   
-
+# M
+### Why factory method relies on inheritance?
