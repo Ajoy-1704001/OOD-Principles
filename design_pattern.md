@@ -56,3 +56,14 @@ Here we have different options to pay. Each payment option has it's own algorith
 
 ### When not to use
 - When we have a small number of algorithms to change, or one algorithm which will never change.
+
+## Decorator Pattern
+- It adds new functionality to objects without modifying their defining classes.
+- Can be thought of as a wrapper or more formally a way to enhance or extend the behavior of an object dynamically.
+- Doesn't use inheritance to extend behavior.
+- Decorator classes mirror the type of the components they decorate.
+- It usually insert decorators transparently and the client never has to know it’s dealing with a decorator.
+- It truely follows the OCP principle.
+
+  ### Main Components
+  
