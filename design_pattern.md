@@ -66,7 +66,7 @@ Here we have different options to pay. Each payment option has it's own algorith
 
   ### Main Components
 
-  <img src="https://github.com/Ajoy-1704001/OOD-Principles/assets/57573642/d16b4246-c5f0-402f-a047-0a680f3da2d3" width=40% height=40%>
+  <img src="https://github.com/Ajoy-1704001/OOD-Principles/assets/57573642/d16b4246-c5f0-402f-a047-0a680f3da2d3" width=50% height=40%>
 
   **Component:** is an common interface for both the components(wrapped objects) and decorators(wrapper).
   **Concrete Component:** are the classes of objects that are going to be wrapped.
