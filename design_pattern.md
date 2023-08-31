@@ -92,3 +92,7 @@ Here we have different options to pay. Each payment option has it's own algorith
   
 # M
 ### Why factory method relies on inheritance?
+
+The factory method pattern relies on inheritance, as object creation is delegated to subclasses that implement the factory method to create objects. Concrete class of ```Creator``` interface overrides the object creation method and creates object according to the concrete class. So, subclasses mainly use polymorphism of ```createObject``` via inheritance.
+
+### How factory pattern promotes loose coupling?
