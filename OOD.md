@@ -50,7 +50,7 @@ SOLID is a short form for the five object-oriented design (OOD) principles by Ro
 
   <img src="https://github.com/Ajoy-1704001/OOD-Principles/assets/57573642/65779144-96ab-47fe-a98d-99564db43ec9" width=50% height=30%>
 
-  # Design Pattern
+# Design Pattern
 
 Design pattern is a general repeatable solution to a commonly occurring problem in software design.
 
