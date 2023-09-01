@@ -46,7 +46,7 @@ There are different types of design pattern. These are differed from each other 
 
 ### Main Components
 
-<img src="https://github.com/Ajoy-1704001/OOD-Principles/assets/57573642/caf7fc72-83d0-4452-bfa0-26f5a6f214da" width=40% height=40%>
+<img src="https://github.com/Ajoy-1704001/OOD-Principles/assets/57573642/caf7fc72-83d0-4452-bfa0-26f5a6f214da" width=50% height=50%>
 
 **Context:** It maintains a reference to the concrete strategy.
 
@@ -57,7 +57,7 @@ There are different types of design pattern. These are differed from each other 
 ### Example:
 Here we have different options to pay. Each payment option has it's own algorithm or set of procedures. Using Strategy Design Pattern, user can choose a payment option at runtime and process the payment. ```Client``` will inform the ```PaymentContext``` about the ```PaymentStrategy```. ```PaymentContext``` will process the payment using the delegated methods of ```PaymentStrategy``` concrete object.
 
-<img src="https://github.com/Ajoy-1704001/OOD-Principles/assets/57573642/1c0b4e79-48bf-4f16-b5ef-1a1d8f9d4960" width=55% height=40%>
+<img src="https://github.com/Ajoy-1704001/OOD-Principles/assets/57573642/1c0b4e79-48bf-4f16-b5ef-1a1d8f9d4960" width=50% height=50%>
 
 ### When to use Strategy Pattern
 - When we have to change algorithm/strategy dynamically at run time.
