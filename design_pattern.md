@@ -11,8 +11,8 @@ There are different types of design pattern. These are differed from each other 
 ## Factory Pattern
 - It encapsulates object creation logic.
 - Defines an interface for creating an object, but let subclass decide which class to instantiate.
-- Factory method depends on inheritance. [How?](why-factory-method-relies-on-inheritance)
-- All factory patterns promote loose coupling. [How?](how-factory-pattern-promotes-loose-coupling)
+- Factory method depends on inheritance. [How?](miscellaneous)
+- All factory patterns promote loose coupling. [How?](miscellaneous)
 - The Factory Pattern helps us to align with the Dependency Inversion principle.
   ### Main Components
   
