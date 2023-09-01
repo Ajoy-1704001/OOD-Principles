@@ -1,5 +1,12 @@
 # Design Pattern
 
+Design pattern is a general repeatable solution to a commonly occurring problem in software design.
+
+## Why do we need design pattern?
+1. Provides proven development paradigm.
+2. Saves time without having to reinvent pattern everytime a problem arise.
+3. Promotes reusability.
+4. Enables developer/designers to share a common vocabulary in system design.
 
 # Classification of Design Patterns
 There are different types of design pattern. These are differed from each other on the basis of complexity, details level, intent and scale of applicability to the entire system being design. Design Patterns are mainly classified into three categories. Such as:
