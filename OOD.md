@@ -77,6 +77,11 @@ There are different types of design pattern. These are differed from each other 
   
   <img src="https://github.com/Ajoy-1704001/OOD-Principles/assets/57573642/981b47c1-0ae6-4c11-ac8b-d4ef427744b9" width=55% height=40%>
 
+  ```java
+  ConcreteCreatorA creatorA = new ConcreteCreatorA();
+  Product product = creatorA.createProduct("A");
+  ```
+
   **Creator:** can be an abstract class or concrete class which should define the factory method.
   
   **Concrete Creator:**  are the subclasses overriding the factory method to return differnet objects.
