@@ -20,7 +20,7 @@ SOLID is a short form for the five object-oriented design (OOD) principles by Ro
   Example: We have  class two ```Product``` and ```Order``` which have multiple attributes. ```Order``` class have a method ```calculateDiscount()```.
   Visual representation of above scenario is given below:
   
-  <img src="https://github.com/Ajoy-1704001/OOD-Principles/assets/57573642/32a94f8d-ffc0-44f0-8890-fa647657aafb" width=60% height=50%>
+  <img src="https://github.com/Ajoy-1704001/OOD-Principles/assets/57573642/32a94f8d-ffc0-44f0-8890-fa647657aafb" width=50% height=40%>
 
   **Violation**
   
