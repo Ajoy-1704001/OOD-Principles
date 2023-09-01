@@ -28,6 +28,8 @@ There are different types of design pattern. These are differed from each other 
 
   ### Example
   Here, we are using an open source framework and it only provides ```Square``` button. But we need a Round Shape Button. So we extend the ```Button``` class and create our subclass ```RoundButton``` and add our own implementaions. But now we have to tell the factory to create our ```RoundButton``` instead of default button. We can simply extend our base framwork and override its ```createButton``` method which return ```RoundButton``` objects.
+  
+  <img src="https://github.com/Ajoy-1704001/OOD-Principles/assets/57573642/2c3c0dcf-7a5e-491d-b8f5-303be6effa5b" width=55% height=40%>
 
   ### When to use Factory Pattern
   - When we want to provide users of our library or framework with a way to extend its internal components.
@@ -54,6 +56,8 @@ There are different types of design pattern. These are differed from each other 
 
 ### Example:
 Here we have different options to pay. Each payment option has it's own algorithm or set of procedures. Using Strategy Design Pattern, user can choose a payment option at runtime and process the payment. ```Client``` will inform the ```PaymentContext``` about the ```PaymentStrategy```. ```PaymentContext``` will process the payment using the delegated methods of ```PaymentStrategy``` concrete object.
+
+<img src="https://github.com/Ajoy-1704001/OOD-Principles/assets/57573642/1c0b4e79-48bf-4f16-b5ef-1a1d8f9d4960" width=55% height=40%>
 
 ### When to use Strategy Pattern
 - When we have to change algorithm/strategy dynamically at run time.
@@ -83,8 +87,8 @@ Here we have different options to pay. Each payment option has it's own algorith
 
   ### Example
   Suppose, we have a ```Pizza``` interface. We create a ```PlainPizza``` class implementing the ```Pizza``` interface. But, I want to add some cheese in the pizza. Again, one of my friend wants some extra sauce in the pizza. After that, I also want another pizza with both extra cheese and sauce in the pizza. So, creating those different pizza's from ```Pizza``` interface using inheritance, cost lots of redundant code. So, here comes the decorator pattern. Decorator are the same type as the component, so basically it wraps the ```PlainPizza``` and decorates it with its own behavior. Using different types of concrete decorator, we can wrap each other and get our desired pizza.
-  
-  <img src="https://github.com/Ajoy-1704001/OOD-Principles/assets/57573642/5ae45ae9-78b0-45b6-a4e8-86bde740be62" width=50% height=30%>
+
+  <img src="https://github.com/Ajoy-1704001/OOD-Principles/assets/57573642/d3e121b2-49fb-48a2-92a3-606f2defc9ef" width=50% height=30%>
 
   ### When to use Decorator Pattern
   - When we want to be able to assign extra behaviors to objects at runtime without breaking the code that uses these objects.
