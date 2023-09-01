@@ -11,8 +11,8 @@ There are different types of design pattern. These are differed from each other 
 ## Factory Pattern
 - It encapsulates object creation logic.
 - Defines an interface for creating an object, but let subclass decide which class to instantiate.
-- Factory method depends on inheritance.
-- All factory patterns promote loose coupling.
+- Factory method depends on inheritance. [How?](Why-factory-method-relies-on-inheritance?)
+- All factory patterns promote loose coupling. [How?](How-factory-pattern-promotes-loose-coupling?)
 - The Factory Pattern helps us to align with the Dependency Inversion principle.
   ### Main Components
   
@@ -97,6 +97,8 @@ Here we have different options to pay. Each payment option has it's own algorith
 # Miscellaneous
 ### Why factory method relies on inheritance?
 
-The factory method pattern relies on inheritance, as object creation is delegated to subclasses that implement the factory method to create objects. Concrete class of ```Creator``` interface overrides the object creation method and creates object according to the concrete class. So, subclasses mainly use polymorphism of ```createObject``` via inheritance.
+The factory method pattern relies on inheritance, as object creation is inherited to subclasses that implement the factory method to create objects. Concrete class of ```Creator``` interface overrides the object creation method and creates object according to the concrete class. So, subclasses mainly use polymorphism of ```createObject``` via inheritance.
 
 ### How factory pattern promotes loose coupling?
+
+The client always communicates with the factory interface/abstract class so that it will only work with the subclasses. On the other hand, subclasses decide which object to create. So, it reduces the dependency between client and concrete classes. This is how factory pattern achieves loose coupling.
